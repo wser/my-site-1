@@ -1,40 +1,85 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
-        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-        <style>
-            h1 {
-                font-family: Pacifico, sans-serif;
-                font-size: 4em;
-                color: #3eb5f1;
-                margin: 0;
-            }
+  <head>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      h1 {
+        font-family: Pacifico, sans-serif;
+        font-size: 4em;
+        color: #3eb5f1;
+        margin: 0;
+      }
 
-            h2 {
-                font-weight: 300;
-                font-family: sans-serif;
-            }
+      h2 {
+        font-weight: 300;
+        font-family: sans-serif;
+      }
 
-            .centered {
-                position: fixed;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                text-align: center;
-            }
+      .centered {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
 
-            #ferris {
-                width: 75%;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="centered">
-            <h1>200 Success</h1>
-            <h2>Hello World! Welcome to your Workers Site.</h2>
-            <img id="ferris" alt="a happy crab is wearing a cowboy hat and holding a lasso. 200 success." src="./img/200-wrangler-ferris.gif">
-        </div>
-    </body>
+      #ferris {
+        width: 75%;
+      }
+      .demo {
+        font-family: sans-serif;
+        border: 1px solid #eee;
+        border-radius: 2px;
+        padding: 20px 30px;
+        margin-top: 1em;
+        margin-bottom: 40px;
+        user-select: none;
+        overflow-x: auto;
+      }
+    </style>
+    <script src="https://unpkg.com/vue@next"></script>
+  </head>
+  <body>
+    <div class="centered">
+      <h1>200 Success</h1>
+      <h2>Hello World! Welcome to your Workers Site.</h2>
+      <img
+        id="ferris"
+        alt="a happy crab is wearing a cowboy hat and holding a lasso. 200 success."
+        src="./img/200-wrangler-ferris.gif"
+      />
+    </div>
+
+    <div id="components-demo">
+      <button-counter></button-counter>
+    </div>
+
+    <script>
+      // Create a Vue application
+      const app = Vue.createApp({});
+
+      // Define a new global component called button-counter
+      app.component('button-counter', {
+        data() {
+          return {
+            count: 0,
+          };
+        },
+        template: `
+    <button v-on:click="count++">
+      You clicked me {{ count }} times.
+    </button>`,
+      });
+
+      app.mount('#components-demo');
+    </script>
+  </body>
 </html>
