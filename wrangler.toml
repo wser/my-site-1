@@ -1,4 +1,4 @@
-account_id = ""
+account_id = "3a267e5bfbb50f9c51af8dbf58933956"
 name = "my-site-1"
 type = "webpack"
 workers_dev = true
