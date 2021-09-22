@@ -1,7 +1,7 @@
 /* CONFIGURATION STARTS HERE */
 
 /* Step 1: enter your domain name like fruitionsite.com */
-const MY_DOMAIN = 'my-site-1.pages.dev';
+const MY_DOMAIN = 'viktor.vidakovic.info';
 
 /*
  * Step 2: enter your URL slug to page ID mapping
@@ -16,8 +16,8 @@ const SLUG_TO_PAGE = {
 };
 
 /* Step 3: enter your page title and description for SEO purposes */
-const PAGE_TITLE = 'vikt0r.com';
-const PAGE_DESCRIPTION = 'my page from notion';
+const PAGE_TITLE = 'viktor.vidakovic.info';
+const PAGE_DESCRIPTION = 'my personal page from notion';
 
 /* Step 4: enter a Google Font name, you can choose from https://fonts.google.com */
 const GOOGLE_FONT = 'Varela Round';
