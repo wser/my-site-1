@@ -1,7 +1,7 @@
 /* CONFIGURATION STARTS HERE */
 
 /* Step 1: enter your domain name like fruitionsite.com */
-const MY_DOMAIN = 'vikt0r.com';
+const MY_DOMAIN = 'my-site-1.pages.dev';
 
 /*
  * Step 2: enter your URL slug to page ID mapping
@@ -9,7 +9,7 @@ const MY_DOMAIN = 'vikt0r.com';
  * The value on the right is the Notion page ID
  */
 const SLUG_TO_PAGE = {
-  '': 'b7d688b35fcc4932be51534b7e66c4da',
+  '': '53f15886755a4cd68e193ea63e827389',
   // "about": "<NOTION PAGE ID>",   // page with about info
   // "blog": "<NOTION PAGE ID>",    // your blog page
   // "contact": "<NOTION PAGE ID>", // feedback form
